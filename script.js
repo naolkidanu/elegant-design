@@ -1,10 +1,7 @@
-const navMenu = document.querySelector('.nav-menu');
-const navItem = document.querySelectorAll('.nav-item');
 const more = document.querySelector('.btn-more');
-const cards = document.querySelector('.cards');
 const feature = document.querySelector('.feature-cards');
 
-const team= [
+const team = [
   {
     name: 'Abdelmejid oumer',
     position: 'CEO',
@@ -55,15 +52,6 @@ const team= [
   },
 ];
 
-// for (let i = 0; i < team.length; i += 1) {
-//   const teamM = `<div class="team">
-//       <img class="pic" src="${team[i].imageUrl}" alt="First-img" />
-//       <h2 class="card-name">${team[i].name}</h2>
-//       <p class="tex-sec">${team[i].description}</p>
-//       <em>${team[i].position}</em>
-//     </div>`;
-//     team.insertAdjacentHTML('beforeend', teamM);
-// }
 const showLectures = (i) => {
   feature.innerHTML += `<article class="feature-card">
 <div class="feature-img">
@@ -79,7 +67,7 @@ alt="card-image"
 </div>
 <div>
 <h3 class="feture-name">${team[i].name}</h3>
-<p>${team[i].position}</p>
+<p class="card-title">${team[i].position}</p>
 <p class="card-content">
 ${team[i].description}
 </p>
@@ -107,10 +95,8 @@ const navUl = document.querySelector('.header-list');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navUl.classList.toggle('active');
-  log.classList.toggle('active');
 });
 document.querySelectorAll('.header-list').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navUl.classList.remove('active');
-  log.classList.remove('active');
 }));
