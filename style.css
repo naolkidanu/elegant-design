@@ -153,11 +153,13 @@ header {
   text-align: center;
   color: #777;
 }
-.card-title{
-  color:#ec5242;
+
+.card-title {
+  color: #ec5242;
   margin: 8px 0;
   font-style: italic;
 }
+
 .logos {
   display: flex;
   justify-content: space-around;
@@ -230,10 +232,10 @@ footer {
   display: none;
 }
 
-.visited{
+.visited {
   padding: 0.75rem 2.4rem;
   color: #ec5242;
-  border: 0.5rem solid #ec5242
+  border: 0.5rem solid #ec5242;
 }
 
 .section-mark {
